@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resin Art Shop - Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Resin Art Shop</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contacts.html">Contacts</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products-container">
+
+      <!-- Resin Earrings -->
+      <div class="product-card" data-id="resin-earrings" data-name="Resin Earrings" data-baseprice="799">
+        <img src="https://via.placeholder.com/300x260?text=Resin+Earrings" alt="Resin Earrings" class="product-img">
+        <div class="product-body">
+          <h3 class="product-title">Resin Earrings</h3>
+          <p class="product-desc">Handcrafted resin earrings with flowers, shells, or glitter. Lightweight and unique.</p>
+          <label>Variant:
+            <select class="variant-select">
+              <option value="flowers">Flowers</option>
+              <option value="shells">Shells</option>
+              <option value="glitter">Glitter</option>
+            </select>
+          </label>
+          <label>Qty:
+            <input type="number" class="qty-input" value="1" min="1">
+          </label>
+          <div class="product-footer">
+            <div class="price">₹<span class="price-value">799</span></div>
+            <button class="add-cart-btn" onclick="addCardToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resin Pendants & Necklaces -->
+      <div class="product-card" data-id="resin-pendant" data-name="Resin Pendant" data-baseprice="999">
+        <img src="https://via.placeholder.com/300x260?text=Resin+Pendant" alt="Resin Pendant" class="product-img">
+        <div class="product-body">
+          <h3 class="product-title">Resin Pendants & Necklaces</h3>
+          <p class="product-desc">Hand-poured pendants with flowers, shells, or glitter. Unique, glossy, and lightweight.</p>
+          <label>Variant:
+            <select class="variant-select">
+              <option value="flowers">Flowers</option>
+              <option value="shells">Shells</option>
+              <option value="glitter">Glitter</option>
+            </select>
+          </label>
+          <label>Qty:
+            <input type="number" class="qty-input" value="1" min="1">
+          </label>
+          <div class="product-footer">
+            <div class="price">₹<span class="price-value">999</span></div>
+            <button class="add-cart-btn" onclick="addCardToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resin Rings -->
+      <div class="product-card" data-id="resin-rings" data-name="Resin Rings" data-baseprice="599">
+        <img src="https://via.placeholder.com/300x260?text=Resin+Rings" alt="Resin Rings" class="product-img">
+        <div class="product-body">
+          <h3 class="product-title">Resin Rings</h3>
+          <p class="product-desc">Handcrafted rings with flowers, shells, or glitter. Lightweight & artistic.</p>
+          <label>Variant:
+            <select class="variant-select">
+              <option value="flowers">Flowers</option>
+              <option value="shells">Shells</option>
+              <option value="glitter">Glitter</option>
+            </select>
+          </label>
+          <label>Qty:
+            <input type="number" class="qty-input" value="1" min="1">
+          </label>
+          <div class="product-footer">
+            <div class="price">₹<span class="price-value">599</span></div>
+            <button class="add-cart-btn" onclick="addCardToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resin Bracelets / Bangles -->
+      <div class="product-card" data-id="resin-bracelets" data-name="Resin Bracelets" data-baseprice="699">
+        <img src="https://via.placeholder.com/300x260?text=Resin+Bracelets" alt="Resin Bracelets" class="product-img">
+        <div class="product-body">
+          <h3 class="product-title">Resin Bracelets / Bangles</h3>
+          <p class="product-desc">Handcrafted bracelets with flowers, shells, or glitter. Glossy & lightweight.</p>
+          <label>Variant:
+            <select class="variant-select">
+              <option value="flowers">Flowers</option>
+              <option value="shells">Shells</option>
+              <option value="glitter">Glitter</option>
+            </select>
+          </label>
+          <label>Qty:
+            <input type="number" class="qty-input" value="1" min="1">
+          </label>
+          <div class="product-footer">
+            <div class="price">₹<span class="price-value">699</span></div>
+            <button class="add-cart-btn" onclick="addCardToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resin Keychains -->
+      <div class="product-card" data-id="resin-keychains" data-name="Resin Keychains" data-baseprice="399">
+        <img src="https://via.placeholder.com/300x260?text=Resin+Keychains" alt="Resin Keychains" class="product-img">
+        <div class="product-body">
+          <h3 class="product-title">Resin Keychains</h3>
+          <p class="product-desc">Custom keychains with alphabets, hearts, names, or zodiac signs. Glitter & flower accents.</p>
+          <label>Variant:
+            <select class="variant-select">
+              <option value="alphabet">Alphabet</option>
+              <option value="heart">Heart</option>
+              <option value="name">Name</option>
+              <option value="zodiac">Zodiac</option>
+            </select>
+          </label>
+          <label>Qty:
+            <input type="number" class="qty-input" value="1" min="1">
+          </label>
+          <div class="product-footer">
+            <div class="price">₹<span class="price-value">399</span></div>
+            <button class="add-cart-btn" onclick="addCardToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resin Trays -->
+      <div class="product-card" data-id="resin-trays" data-name="Resin Trays" data-baseprice="1499">
+        <img src="https://via.placeholder.com/300x260?text=Resin+Trays" alt="Resin Trays" class="product-img">
+        <div class="product-body">
+          <h3 class="product-title">Resin Trays</h3>
+          <p class="product-desc">Decorative resin trays with flowers, shells, glitter, or metallic foil. Perfect for gifts & décor.</p>
+          <label>Variant:
+            <select class="variant-select">
+              <option value="flowers">Flowers</option>
+              <option value="shells">Shells</option>
+              <option value="glitter">Glitter</option>
+              <option value="metallic-foil">Metallic Foil</option>
+            </select>
+          </label>
+          <label>Qty:
+            <input type="number" class="qty-input" value="1" min="1">
+          </label>
+          <div class="product-footer">
+            <div class="price">₹<span class="price-value">1499</span></div>
+            <button class="add-cart-btn" onclick="addCardToCart(this)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resin Candle Holders -->
+      <div class="product-card" data-id="resin-candleholders" data-name="Resin Candle Holders" data-baseprice="899">
+        <img src="https://via.placeholder.com/300x260?text=Resin+Candle+Holders" alt="Resin Candle Holders" class="product-img">
+        <div class="product-body">
+          <h3 class="product-title">Resin Candle Holders / Tea Light Holders</h3>
+          <p class="product-desc">Beautiful & safe for use Resin candle Holders/Tea Light Holders with flowers, shells, glitter, or metallic foil. Perfect for gifts & décor.</p>
+            <label>Variant:
+              <select class="variant-select">
+                <option value="flowers">Flowers</option>
+                <option value="shells">Shells</option>
+                <option value="glitter">Glitter</option>
+                <option value="metallic-foil">Metallic Foil</option>
+              </select>
+            </label>
+            <label>Qty:
+              <input type="number" class="qty-input" value="1" min="1">
+            </label>
+            <div class="product-footer">
+              <div class="price">₹<span class="price-value">999</span></div>
+              <button class="add-cart-btn" onclick="addCardToCart(this)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
